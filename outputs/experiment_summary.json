@@ -1,0 +1,56 @@
+{
+  "dataset": {
+    "rows": 569,
+    "features": 30,
+    "missing_feature_values": 0,
+    "duplicate_feature_rows": 0,
+    "class_counts": {
+      "malignant": 212,
+      "benign": 357
+    }
+  },
+  "split": {
+    "train_rows": 455,
+    "test_rows": 114,
+    "test_fraction": 0.2,
+    "random_state": 42
+  },
+  "tuning": {
+    "best_C": 1.0,
+    "best_mean_cv_roc_auc": 0.9958720330237357
+  },
+  "confusion_matrix_labels": [
+    "malignant",
+    "benign"
+  ],
+  "confusion_matrix": [
+    [
+      41,
+      1
+    ],
+    [
+      1,
+      71
+    ]
+  ],
+  "test_metrics": {
+    "Tuned Logistic Regression": {
+      "Accuracy": 0.9824561403508771,
+      "Balanced accuracy": 0.9811507936507937,
+      "Precision (benign)": 0.9861111111111112,
+      "Recall (benign)": 0.9861111111111112,
+      "F1 (benign)": 0.9861111111111112,
+      "ROC-AUC": 0.9953703703703703,
+      "Matthews correlation coefficient": 0.9623015873015873
+    },
+    "Random Forest": {
+      "Accuracy": 0.9473684210526315,
+      "Balanced accuracy": 0.9434523809523809,
+      "Precision (benign)": 0.9583333333333334,
+      "Recall (benign)": 0.9583333333333334,
+      "F1 (benign)": 0.9583333333333334,
+      "ROC-AUC": 0.9937169312169313,
+      "Matthews correlation coefficient": 0.8869047619047619
+    }
+  }
+}
